@@ -168,9 +168,9 @@ include $(BUILD_SYSTEM)/node_fns.mk
 include $(BUILD_SYSTEM)/product.mk
 include $(BUILD_SYSTEM)/device.mk
 
-# A GZOSP build needs only the GZOSP product makefiles.
-ifneq ($(GZOSP_BUILD),)
-  all_product_configs := $(shell find device -path "*/$(GZOSP_BUILD)/gzosp.mk")
+# A TESLA build needs only the TESLA product makefiles.
+ifneq ($(TESLA_BUILD),)
+  all_product_configs := $(shell find device -path "*/$(TESLA_BUILD)/tesla.mk")
 else
   ifneq ($(strip $(TARGET_BUILD_APPS)),)
   # An unbundled app build needs only the core product makefiles.
@@ -181,9 +181,9 @@ else
   # files in the tree.
   all_product_configs := $(get-all-product-makefiles)
   endif # TARGET_BUILD_APPS
-endif # GZOSP_BUILD
+endif # TESLA_BUILD
 
-ifeq ($(GZOSP_BUILD),)
+ifeq ($(TESLA_BUILD),)
 all_named_products :=
 
 # Find the product config makefile for the current product.
