@@ -2842,23 +2842,19 @@ bacon: otapackage
 tesla: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(TESLA_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(TESLA_TARGET_PACKAGE) > $(TESLA_TARGET_PACKAGE).md5sum
-	@echo -e ${CL_CYN}""${CL_CYN}
-	@echo -e ${CL_CYN}" ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄            ▄▄▄▄▄▄▄▄▄▄▄       ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ "${CL_CYN}
-	@echo -e ${CL_CYN}"▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌          ▐░░░░░░░░░░░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌"${CL_CYN}
-	@echo -e ${CL_CYN}" ▀▀▀▀█░█▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░▌          ▐░█▀▀▀▀▀▀▀█░▌     ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ "${CL_CYN}
-	@echo -e ${CL_CYN}"     ▐░▌     ▐░▌          ▐░▌          ▐░▌          ▐░▌       ▐░▌     ▐░▌       ▐░▌▐░▌          "${CL_CYN}
-	@echo -e ${CL_CYN}"     ▐░▌     ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌          ▐░█▄▄▄▄▄▄▄█░▌     ▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ "${CL_CYN}
-	@echo -e ${CL_CYN}"     ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌          ▐░░░░░░░░░░░▌     ▐░▌       ▐░▌▐░░░░░░░░░░░▌"${CL_CYN}
-	@echo -e ${CL_CYN}"     ▐░▌     ▐░█▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀█░▌▐░▌          ▐░█▀▀▀▀▀▀▀█░▌     ▐░▌       ▐░▌ ▀▀▀▀▀▀▀▀▀█░▌"${CL_CYN}
-	@echo -e ${CL_CYN}"     ▐░▌     ▐░▌                    ▐░▌▐░▌          ▐░▌       ▐░▌     ▐░▌       ▐░▌          ▐░▌"${CL_CYN}
-	@echo -e ${CL_CYN}"     ▐░▌     ▐░█▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌       ▐░▌     ▐░█▄▄▄▄▄▄▄█░▌ ▄▄▄▄▄▄▄▄▄█░▌"${CL_CYN}
-	@echo -e ${CL_CYN}"     ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌"${CL_CYN}
-	@echo -e ${CL_CYN}"      ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ "${CL_CYN}
-	@echo -e ${CL_CYN}"                                                                                                "${CL_CYN}
-	@echo -e ${CL_BLU}"                                         The present is theirs "${CL_BLU}
-	@echo -e ${CL_BLU}"                             the future, for which I really worked, is mine.      "${CL_BLU}
-	@echo -e ${CL_BLU}"                                                              'Nikola Tesla'        "${CL_BLU}
-	@echo -e "Package complete: $(TESLA_TARGETPACKAGE)"
+	@echo -e ${CL_CYN}"  _________  _______   ________  ___       ________     "${CL_CYN}
+	@echo -e ${CL_CYN}" |\___   ___\\  ___ \ |\   ____\|\  \     |\   __  \    "${CL_CYN}
+	@echo -e ${CL_CYN}" \|___ \  \_\ \   __/|\ \  \___|\ \  \    \ \  \|\  \   "${CL_CYN}
+	@echo -e ${CL_CYN}"      \ \  \ \ \  \_|/_\ \_____  \ \  \    \ \   __  \  "${CL_CYN}
+	@echo -e ${CL_CYN}"       \ \  \ \ \  \_|\ \|____|\  \ \  \____\ \  \ \  \ "${CL_CYN}
+	@echo -e ${CL_CYN}"        \ \__\ \ \_______\____\_\  \ \_______\ \__\ \__\ "${CL_CYN}
+	@echo -e ${CL_CYN}"         \|__|  \|_______|\_________\|_______|\|__|\|__| "${CL_CYN}
+	@echo -e ${CL_CYN}"                         \|_________|                    "${CL_CYN}
+	@echo -e ${CL_CYN}"                                                         "${CL_CYN}
+	@echo -e ${CL_BLU}"                   The present is theirs "${CL_BLU}
+	@echo -e ${CL_BLU}"       the future, for which I really worked, is mine.      "${CL_BLU}
+	@echo -e ${CL_BLU}"                                       'Nikola Tesla'        "${CL_BLU}
+	@echo -e ${CL_CYN}"Package complete: $(TESLA_TARGET_PACKAGE)"${CL_CYN}${CL_RST}
 
 endif    # build_ota_package
 
